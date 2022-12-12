@@ -1,2 +1,9 @@
-# plot_test
-testing plotting options in C# dotnet
+# Plot tests
+
+Testing plotting options in C# dotnet
+
+3 solutions used for performance comparison
+
+* `OxyPlot`
+* `ScottPlot`
+* `LiveCharts2` (preview/beta)
