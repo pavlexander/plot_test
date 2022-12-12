@@ -57,6 +57,19 @@ namespace PlotTest.Extensions
 
                 compressedFileStream.Close();
             }
+
+            /*
+            using (Stream fs = File.OpenRead("gj.txt"))
+            using (Stream fd = File.Create("gj.zip"))
+            using (Stream csStream = new GZipStream(fd, CompressionMode.Compress))
+            {
+                byte[] buffer = new byte[1024];
+                int nRead;
+                while ((nRead = fs.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    csStream.Write(buffer, 0, nRead);
+                }
+            }*/
         }
 
         public static void DecompressFile(string compressedFileName, string decompressedFileName)
